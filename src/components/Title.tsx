@@ -1,7 +1,11 @@
 import React from "react";
 
 const Title = () => {
-  return <div>Weather App</div>;
+  return (
+    <div>
+      <h1>Weather App</h1>
+    </div>
+  );
 };
 
 export default Title;
