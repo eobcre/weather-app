@@ -1,7 +1,7 @@
 const Title = () => {
   return (
     <div>
-      <h1 className='text-3xl'>Weather App</h1>
+      <p className='text-5xl text-white font-Montserrat py-6'>Weather App</p>
     </div>
   );
 };
