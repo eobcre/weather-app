@@ -1,26 +1,21 @@
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 
-const Form = () => {
-  const [city, setCity] = useState<string>("");
-  const getWeather = (e: any) => {
-    e.preventDefault();
-    fetch(
-      "https://api.weatherapi.com/v1/current.json?key=e83949a5a85a460e8e923412220811&q=London&aqi=no"
-    )
-      .then((res) => res.json())
-      .then((data) => console.log(data));
-  };
+type FormPropsType = {
+  setCity: React.Dispatch<React.SetStateAction<string>>;
+  getWeather: (e: any) => void;
+};
 
+const Form = (props: FormPropsType) => {
   return (
     <form>
       <input
         type="text"
         name="city"
         placeholder="Search City"
-        onChange={(e) => setCity(e.target.value)}
+        onChange={(e) => props.setCity(e.target.value)}
       />
-      <button type="submit" onClick={getWeather}>
+      <button type="submit" onClick={props.getWeather}>
         <FaSearch />
       </button>
     </form>
