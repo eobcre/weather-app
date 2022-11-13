@@ -1,9 +1,11 @@
-import { useState } from "react";
+// Icon
+import React from "react";
 import { FaSearch } from "react-icons/fa";
 
+// Type declarations
 type FormPropsType = {
   setCity: React.Dispatch<React.SetStateAction<string>>;
-  getWeather: (e: any) => void;
+  getWeather: (e: React.ChangeEvent<HTMLFormElement>) => void;
 };
 
 const Form = (props: FormPropsType) => {
