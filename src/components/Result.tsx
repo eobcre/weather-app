@@ -21,7 +21,7 @@ const Results = (props: ResultsPropsType) => {
       )}
       {props.results.conditionText && (
         <div>
-          <img src={props.results.icon} alt="Icon" />
+          <img src={props.results.icon} alt='Icon' />
           <span>{props.results.conditionText}</span>
         </div>
       )}
