@@ -39,8 +39,8 @@ const App = () => {
   };
   return (
     // JSX
-    <div className='bg-webTop h-screen w-screen bg-center text-center table'>
-      <div className='glass mx-auto py-6 px-6 w-3/5 table-cell align-top md:align-middle'>
+    <div className='bg-webTop h-screen w-screen bg-center text-center flex justift-center items-center'>
+      <div className='glass mx-auto py-6 px-6 rounded-md md:w-3/5'>
         <Title />
         <Form setCity={setCity} getWeather={getWeather} />
         <Result results={results} />
