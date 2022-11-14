@@ -37,8 +37,8 @@ const App = () => {
         });
       });
   };
-  // JSX
   return (
+    // JSX
     <div className='bg-webTop h-screen w-screen bg-center text-center table'>
       <div className='glass mx-auto py-6 px-6 w-3/5 table-cell align-top md:align-middle'>
         <Title />
