@@ -10,8 +10,8 @@ type ResultsPropsType = {
 };
 
 const Results = (props: ResultsPropsType) => {
-  // JSX
   return (
+    // JSX
     <div className='text-xl text-white'>
       {props.results.country && <div>{props.results.country}</div>}
       {props.results.cityName && (

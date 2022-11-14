@@ -8,8 +8,8 @@ type FormPropsType = {
 };
 
 const Form = (props: FormPropsType) => {
-  // JSX
   return (
+    // JSX
     <form>
       <input
         type='text'
