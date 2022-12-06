@@ -18,5 +18,3 @@ $ npm run dev
 - react-icons 4.6.0
 - Tailwind 3.2.2
 - Vite 3.2.3
-
-TEST
