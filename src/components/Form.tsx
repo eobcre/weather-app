@@ -1,21 +1,26 @@
 // Icon
 import { FaSearch } from 'react-icons/fa';
 
-// Type declarations
+// Type
 type FormPropsType = {
   setCity: React.Dispatch<React.SetStateAction<string>>;
   getWeather: (e: any) => void;
 };
 
 export const Form = (props: FormPropsType) => {
+  // onChange
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    props.setCity(e.target.value);
+  };
+
   return (
     // JSX
     <form>
       <input
         type='text'
-        name='city'
+        // name='city'
         placeholder='Search City'
-        onChange={(e) => props.setCity(e.target.value)}
+        onChange={handleChange}
         className='px-2 py-1 mb-6 outline-none rounded-md'
       />
       <button type='submit' onClick={props.getWeather}>
