@@ -43,7 +43,7 @@ const App = () => {
       <div className='bg-glass shadow-xl backdrop-blur-sm mx-auto py-6 px-6 rounded-xl md:w-3/5'>
         <Title />
         <Form setCity={setCity} getWeather={getWeather} />
-        <Result results={result} />
+        <Result result={result} />
       </div>
     </div>
   );
