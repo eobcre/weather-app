@@ -9,7 +9,7 @@ type ResultsPropsType = {
   };
 };
 
-const Results = (props: ResultsPropsType) => {
+export const Result = (props: ResultsPropsType) => {
   return (
     // JSX
     <div className='text-xl text-white'>
@@ -32,5 +32,3 @@ const Results = (props: ResultsPropsType) => {
     </div>
   );
 };
-
-export default Results;

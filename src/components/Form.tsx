@@ -7,7 +7,7 @@ type FormPropsType = {
   getWeather: (e: any) => void;
 };
 
-const Form = (props: FormPropsType) => {
+export const Form = (props: FormPropsType) => {
   return (
     // JSX
     <form>
@@ -24,5 +24,3 @@ const Form = (props: FormPropsType) => {
     </form>
   );
 };
-
-export default Form;

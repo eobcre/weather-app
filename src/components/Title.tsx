@@ -1,4 +1,4 @@
-const Title = () => {
+export const Title = () => {
   return (
     // JSX
     <div>
@@ -8,5 +8,3 @@ const Title = () => {
     </div>
   );
 };
-
-export default Title;
