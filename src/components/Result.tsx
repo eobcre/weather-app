@@ -1,6 +1,6 @@
 // Type
-type ResultPropsType = {
-  result: {
+type ResultsPropsType = {
+  results: {
     country: string;
     cityName: string;
     temperature: string;
@@ -9,24 +9,24 @@ type ResultPropsType = {
   };
 };
 
-export const Result = (props: ResultPropsType) => {
+export const Result = (props: ResultsPropsType) => {
   return (
     // JSX
     <div className='text-xl text-white'>
-      {props.result.country && <div>{props.result.country}</div>}
-      {props.result.cityName && (
-        <div className='py-4'>{props.result.cityName}</div>
+      {props.results.country && <div>{props.results.country}</div>}
+      {props.results.cityName && (
+        <div className='py-4'>{props.results.cityName}</div>
       )}
-      {props.result.temperature && (
+      {props.results.temperature && (
         <div>
-          {props.result.temperature}
+          {props.results.temperature}
           <span> °F</span>
         </div>
       )}
-      {props.result.conditionText && (
+      {props.results.conditionText && (
         <div>
-          <img className='mx-auto' src={props.result.icon} alt='Icon' />
-          <span>{props.result.conditionText}</span>
+          <img className='mx-auto' src={props.results.icon} alt='Icon' />
+          <span>{props.results.conditionText}</span>
         </div>
       )}
     </div>
