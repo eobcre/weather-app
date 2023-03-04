@@ -1,15 +1,6 @@
-// Type
-type ResultsPropsType = {
-  results: {
-    country: string;
-    cityName: string;
-    temperature: string;
-    conditionText: string;
-    icon: string;
-  };
-};
+import { ResultPropsType } from './Types';
 
-export const Result = (props: ResultsPropsType) => {
+export const Result = (props: ResultPropsType) => {
   return (
     // JSX
     <div className='text-xl text-white'>

@@ -1,20 +1,12 @@
 import React, { useState } from 'react';
+import { ResultStateType } from './components/Types';
 import { Title } from './components/Title';
 import { Form } from './components/Form';
 import { Result } from './components/Result';
 
-// Type
-type ResultsStateType = {
-  country: string;
-  cityName: string;
-  temperature: string;
-  conditionText: string;
-  icon: string;
-};
-
 const App = () => {
   const [city, setCity] = useState<string>('');
-  const [results, setResults] = useState<ResultsStateType>({
+  const [results, setResults] = useState<ResultStateType>({
     country: '',
     cityName: '',
     temperature: '',

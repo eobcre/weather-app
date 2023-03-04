@@ -1,11 +1,6 @@
+import { FormPropsType } from './Types';
 // Icon
 import { FaSearch } from 'react-icons/fa';
-
-// Type
-type FormPropsType = {
-  setCity: React.Dispatch<React.SetStateAction<string>>;
-  getWeather: (e: any) => void;
-};
 
 export const Form = (props: FormPropsType) => {
   return (
