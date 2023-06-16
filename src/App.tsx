@@ -13,7 +13,8 @@ const App = () => {
     conditionText: '',
     icon: '',
   });
-  const getWeather = (e: React.ChangeEvent<HTMLFormElement>) => {
+
+  const getWeather = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     fetch(
       `https://api.weatherapi.com/v1/current.json?key=e83949a5a85a460e8e923412220811&q=${city}&aqi=no`
